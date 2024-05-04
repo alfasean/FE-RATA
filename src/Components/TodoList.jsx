@@ -1,5 +1,7 @@
 import React from 'react';
+import '../css/style.css';
 import TodoItem from './TodoItem';
+
 
 const TodoList = ({ todos, toggleComplete, deleteTodo }) => {
   return (

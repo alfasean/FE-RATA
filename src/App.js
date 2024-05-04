@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import './css/style.css';
 import TodoList from './Components/TodoList';
+
 
 const App = () => {
   const [todos, setTodos] = useState([]);
@@ -30,15 +32,19 @@ const App = () => {
   };
 
   return (
-    <div>
-      <h1>To-Do List</h1>
-      <input
-        type="text"
-        value={text}
-        onChange={e => setText(e.target.value)}
-        placeholder="Tambahkan tugas baru"
-      />
-      <button onClick={addTodo}>Tambahkan</button>
+    <div className="app-container">
+      <h1 className="app-title">Todo List</h1>
+      <p className='rata'>by <a href='https://www.rata.id/'>RATA.id</a></p>
+      <div className="input-container">
+        <input
+          type="text"
+          value={text}
+          onChange={e => setText(e.target.value)}
+          placeholder="Tambahkan tugas baru"
+          className="todo-input"
+        />
+        <button variant="primary" onClick={addTodo} className="add-button">Tambahkan</button>
+      </div>
       <TodoList
         todos={todos}
         toggleComplete={toggleComplete}

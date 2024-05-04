@@ -1,0 +1,92 @@
+body {
+  background-color: #222831;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #31363F;
+  margin-top: 100px;
+}
+
+.app-title {
+  text-align: center;
+  color: #ffffff;
+}
+
+.rata {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.rata a{
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.add-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+.add-button:active {
+  background-color: #0056b3;
+  transform: translateY(1px);
+}
+
+
+.todo-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.todo-checkbox {
+  margin-right: 5px;
+}
+
+.completed {
+  text-decoration: line-through;
+  margin-right: 15px;
+  color: gray;
+}
+
+.not-completed {
+  color: #ffffff;
+  margin-right: 15px;
+}
+
+.todo-delete-button {
+  background-color: #E72929;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
